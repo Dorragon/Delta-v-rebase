@@ -1,0 +1,29 @@
+- type: entity
+  name: Maledictum
+  parent: BaseItem
+  id: HammerMaledictum
+  description: A hammer
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Melee/maledictum.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.75
+    wideAnimationRotation: 225
+    damage:
+      types:
+        Blunt: 12
+        Piercing: 6
+        Structural: 10
+    soundHit:
+      path: /Audio/Nyanotrasen/Weapons/club.ogg
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 8
+        Piercing: 4
+        Structural: 10
